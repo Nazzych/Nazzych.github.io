@@ -1,0 +1,30 @@
+/* static/css/main.css */
+
+/* Світла тема (за замовчуванням) */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar, .footer {
+    background-color: #f8f9fa;
+}
+
+/* Темна тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-theme, .footer.dark-theme {
+    background-color: #333333;
+}
+
+.card.dark-theme {
+    background-color: #444444;
+    color: #ffffff;
+}
+.flash.success {
+    color: green;
+}

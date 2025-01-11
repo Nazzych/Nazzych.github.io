@@ -1,0 +1,24 @@
+{% extends "shablon.html" %}
+
+{% block title %}
+Deck - NezerHill
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+<div class="card shadow-sm">
+    <div class="card-header">
+        <h2>Make a deck</h2>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="form-group">
+                <label for="name_deck">Input name:</label>
+                <input type="name_deck" id="name_deck" name="name_deck" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-3">Create</button>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

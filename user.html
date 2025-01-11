@@ -1,0 +1,34 @@
+{% extends "shablon.html" %}
+
+{% block title %}
+User - NezerHill
+{% endblock %}
+
+{% block body %}
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">-Information about {{ user.username }} account-.</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+                <li style="margin-bottom: 15px;"><strong>Welcome to your account!</strong></li>
+                <li style="margin-bottom: 15px;"><strong>•Your username: </strong>{{ user.username }}</li>
+                <li style="margin-bottom: 15px;"><strong>•Your email: </strong>{{ user.email }}</li>
+                <li style="margin-bottom: 20px;"><strong>•Your data of registrated: </strong>{{ user.username }}</li>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning">Edit info</button>
+                </div>            
+            </ul>
+        </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">-Information about your progress-.</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+                <li style="margin-bottom: 15px;"><strong>•Here is null!</strong></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

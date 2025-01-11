@@ -1,0 +1,20 @@
+{% extends "shablon.html" %}
+
+{% block title %}
+Account - NezerHill
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h2>Account Details</h2>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">User Information</h4>
+            </div>
+            <div class="card-body">
+                <p><strong>Username:</strong> {{ user.username }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
